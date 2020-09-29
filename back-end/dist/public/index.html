@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Hola desde typeScript</h3>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+        function obtenerHeroes() {
+
+            $.ajax({
+                url: '/heroes',
+                method: 'GET',
+                dataType: 'json',
+                success: function (res) {
+                    console.log(res);
+                }
+            });
+
+        }
+
+        obtenerHeroes();
+
+
+
+
+    </script>
+</body>
+
+</html>
