@@ -1,0 +1,22 @@
+<h3>Proveedores</h3>
+<div class="row container" >
+    <button class="btn btn-sm btn-primary mt-4 mb-4 float-right" >Agregar</button>
+</div>
+
+<table class="table table-sm">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Direccion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of proveedores; let i=index " >
+            <th scope="row">{{ i+1 }}</th>
+            <td>{{ user.nombre }}</td>
+            <td>{{ user.correo }}</td>
+            <td>{{ user.direccion }}</td>
+        </tr>
+    </tbody>

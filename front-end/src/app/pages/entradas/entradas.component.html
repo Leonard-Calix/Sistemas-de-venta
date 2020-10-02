@@ -1,0 +1,31 @@
+<h3>Registro de entradas</h3>
+<div class="row container" >
+    <button class="btn btn-sm btn-primary mt-4 mb-4 float-right" >Agregar</button>
+</div>
+
+<table class="table table-sm">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre producto</th>
+            <th scope="col">Nombre proveedor</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Sub total</th>
+            <th scope="col">ISV</th>
+            <th scope="col">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of entradas; let i=index " >
+            <th scope="row">{{ i+1 }}</th>
+            <td>{{ user.nombreProducto }}</td>
+            <td>{{ user.nombreProveedor }}</td>
+            <td>{{ user.cantidad }}</td>
+            <td>{{ user.fecha }}</td>
+            <td>{{ user.sudTotal }}</td>
+            <td>{{ user.isv }}</td>
+            <td>{{ user.total }}</td>
+        </tr>
+    </tbody>
+>

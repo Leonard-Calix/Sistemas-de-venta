@@ -12,6 +12,15 @@ import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
 import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './register/register.component';
 import { UsuariosService } from './services/usuarios.service';
+import { UsuariosComponent } from './pages/usuarios/usuarios.component';
+import { ClientesComponent } from './pages/clientes/clientes.component';
+import { ProductoComponent } from './pages/producto/producto.component';
+import { ProveedoresComponent } from './pages/proveedores/proveedores.component';
+import { ProveedoresService } from './services/proveedores.service';
+import { ClientesService } from './services/clientes.service';
+import { ProductoService } from './services/producto.service';
+import { EntradasComponent } from './pages/entradas/entradas.component';
+import { EntradasService } from './services/entradas.service';
 
 
 @NgModule({
@@ -23,7 +32,12 @@ import { UsuariosService } from './services/usuarios.service';
     HeaderComponent,
     BreadcrumbComponent,
     PagesComponent,
-    RegisterComponent
+    RegisterComponent,
+    UsuariosComponent,
+    ClientesComponent,
+    ProductoComponent,
+    ProveedoresComponent,
+    EntradasComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +45,11 @@ import { UsuariosService } from './services/usuarios.service';
     HttpClientModule
   ],
   providers: [
-    UsuariosService
+    UsuariosService,
+    ProveedoresService,
+    ClientesService,
+    ProductoService,
+    EntradasService
   ],
   bootstrap: [AppComponent]
 })

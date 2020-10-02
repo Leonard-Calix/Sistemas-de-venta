@@ -9,7 +9,7 @@
             <ul id="sidebarnav">
                 <li class="user-profile">
                     <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><img
-                            src="../assets/images/users/profile.png" alt="user" /><span class="hide-menu">Steave Jobs
+                            src="../assets/images/users/profile.png" alt="user" /><span class="hide-menu">Bryan Calix
                         </span></a>
                     <ul aria-expanded="false" class="collapse">
                         <li><a href="javascript:void()">My Profile </a></li>
@@ -20,15 +20,24 @@
                     </ul>
                 </li>
                 <li class="nav-devider"></li>
-                <li class="nav-small-cap">PERSONAL</li>
                 <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i
-                            class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard <span
-                                class="label label-rouded label-themecolor pull-right">4</span></span></a>
+                            class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a href="index.html">Minimal </a></li>
-                        <li><a href="index2.html">Analytical</a></li>
-                        <li><a href="index3.html">Demographical</a></li>
-                        <li><a href="index4.html">Modern</a></li>
+                        <li>
+                            <a class="hide-menu" [routerLink]="[ '/usuario']">Usuarios</a>
+                        </li>
+                        <li>
+                            <a class="hide-menu" [routerLink]="[ '/cliente']">Clientes</a>
+                        </li>
+                        <li>
+                            <a class="hide-menu" [routerLink]="[ '/proveedores']">Proveedores</a>
+                        </li>
+                        <li>
+                            <a class="hide-menu" [routerLink]="[ '/productos']">Productos</a>
+                        </li>
+                        <li>
+                            <a class="hide-menu" [routerLink]="[ '/entradas']">Registro de entradas</a>
+                        </li>
                     </ul>
                 </li>
             </ul>

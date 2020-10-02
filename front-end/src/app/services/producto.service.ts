@@ -5,13 +5,13 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class ProveedoresService {
+export class ProductoService {
 
-  constructor( private servicio:HttpClient ) { }
+  constructor(  private servicio:HttpClient ) { }
 
-  urlApi: string = 'http://localhost:3000/proveedores';
+  urlApi: string = 'http://localhost:3000/cliente';
 
-  obtenerProveedores() {
+  obtenerProductos() {
     return this.servicio.get(this.urlApi);
   }
 
