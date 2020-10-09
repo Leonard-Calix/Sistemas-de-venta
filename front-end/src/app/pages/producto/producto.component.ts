@@ -15,14 +15,14 @@ export class ProductoComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.productos();
+    this.obtenerproductos();
   }
 
 
-  obtenerProveedores(){
+  obtenerproductos(){
     this.productoServicio.obtenerProductos().subscribe( (data:any) => {
-      this.productos = data.proveedores;
-      console.log(data)
+      this.productos = data.productos;
+      //console.log(data)
     } );
   }
 

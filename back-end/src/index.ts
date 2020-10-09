@@ -4,10 +4,12 @@ import cors from 'cors';
 
 // Rutas
 
-import rutaUsuario  from "./router/usuario";
-import rutaClientes  from "./router/clientes";
-import rutaProveedores  from "./router/proveedores";
-import rutaEntradas  from "./router/entradas";
+import rutaUsuario from "./router/usuario";
+import rutaClientes from "./router/clientes";
+import rutaProveedores from "./router/proveedores";
+import rutaEntradas from "./router/entradas";
+import rutaProducto from "./router/producto";
+
 
 const server = new Server();
 
@@ -17,11 +19,13 @@ server.app.use(bodyParser.json());
 
 server.app.use(cors());
 
+server.app.use('/usuario', rutaUsuario);
+server.app.use('/cliente', rutaClientes);
+server.app.use('/proveedores', rutaProveedores);
+server.app.use('/entradas', rutaEntradas);
+server.app.use('/productos', rutaProducto);
 
-server.app.use( '/usuario', rutaUsuario );
-server.app.use( '/cliente', rutaClientes );
-server.app.use( '/proveedores', rutaProveedores );
-server.app.use( '/entradas', rutaEntradas );
+
 
 
 // Levanatar el server

@@ -1,11 +1,8 @@
-<h3>Productos</h3>
-<div class="row container" >
-    <button class="btn btn-sm btn-primary mt-4 mb-4 float-right" >Agregar</button>
-</div>
+<h3>Inventario</h3>
 
 <table class="table table-sm">
     <thead class="thead-dark">
-        <tr>
+        <tr class="text-center">
             <th scope="col">#</th>
             <th scope="col">Nombre</th>
             <th scope="col">Precio Unitario</th>
@@ -16,7 +13,7 @@
         <tr *ngFor="let user of productos; let i=index " >
             <th scope="row">{{ i+1 }}</th>
             <td>{{ user.nombre }}</td>
-            <td>{{ user.correo }}</td>
-            <td>{{ user.direccion }}</td>
+            <td>{{ user.precioUnitario }}</td>
+            <td>{{ user.cantidad }}</td>
         </tr>
     </tbody>
